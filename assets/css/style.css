@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #0396ff;
+    --color-2: #7367f0;
+    --color-3: #32ccbc;
+    --color-4: #f55555;
+    --color-5: #ffd503;
+    --color-6: #ff0396;
+    --font-1: "Anton", sans-serif;
+    --font-3: "Be Vietnam Pro", sans-serif;
+    --font-system: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 16px;
+}
+
+.english {
+    background: #f5fafe;
+}
+
+.content {
+    padding: 100px 0;
+    width: 100%;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.item {
+    width: 18%;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.item .thumb {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.item .body {
+    padding: 15px;
+    text-align: center;
+}
+
+.item .title {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-2);
+    margin-bottom: 5px;
+
+    text-shadow: 2px 2px 6px rgba(95, 86, 201, 0.4);
+}
+
+.item .desc,
+.item .IPA {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-3);
+    margin-bottom: 5px;
+}
+
+.item .IPA {
+    color: var(--color-5);
+}
+
+.button {
+    background-color: var(--color-4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.english h2.title {
+    /* font-family: var(--font-1); */
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: var(--color-6);
+    margin-bottom: 50px;
+}
