@@ -48,6 +48,7 @@
             <div class="content">
                 <h2 class="title">từ vựng cơ bản</h2>
                 <div class="list">
+                    
                     <!-- Item  -->
                     <div class="item">
                         <img
@@ -56,9 +57,9 @@
                             class="thumb"
                         />
                         <div class="body">
-                            <h3 class="title line-clamp" id="vocab">each</h3>
-                            <p class="desc">mỗi, mỗi một</p>
-                            <p class="IPA">/itʃ/</p>
+                            <h3 class="title line-clamp" id="vocab">big</h3>
+                            <p class="desc">to lớn</p>
+                            <p class="IPA">/big/</p>
                             <p>
                                 <button
                                     class="button"
@@ -67,71 +68,49 @@
                                     <i class="fa-solid fa-volume-low"></i> Phát
                                     Âm
                                 </button>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Item -->
-                    <div class="item">
-                        <img src="./assets/img/rich.jpg" alt="" class="thumb" />
-                        <div class="body">
-                            <h3 class="title line-clamp" id="vocab">rich</h3>
-                            <p class="desc">giàu</p>
-                            <p class="IPA">/rɪtʃ/</p>
-                            <p>
                                 <button
-                                    class="button"
-                                    onclick="speakWord(this)"
+                                    class="button btn-popup"
+                                    onclick="openPopup('popup4')"
                                 >
-                                    <i class="fa-solid fa-volume-low"></i> Phát
-                                    Âm
+                                    Chi tiết
                                 </button>
                             </p>
                         </div>
-                    </div>
-                    <!-- Item  -->
-                    <div class="item">
-                        <img src="./assets/img/bell.jpg" alt="" class="thumb" />
-                        <div class="body">
-                            <h3 class="title line-clamp" id="vocab">bell</h3>
-                            <p class="desc">chuông</p>
-                            <p class="IPA">/bel/</p>
-                            <p>
-                                <button
-                                    class="button"
-                                    onclick="speakWord(this)"
+                        <!-- Popup for Item  -->
+                        <div id="popup4" class="popup" style="display: none">
+                            <div class="popup-content">
+                                <span
+                                    class="popup-close"
+                                    onclick="closePopup('popup4')"
+                                    >X</span
                                 >
-                                    <i class="fa-solid fa-volume-low"></i> Phát
-                                    Âm
-                                </button>
-                            </p>
+                                <div class="info">
+                                    <h2>Ví dụ chi tiết từ vựng</h2>
+                                    <p>
+                                        <span class="vocab highlight"
+                                            >She is very big</span
+                                        >
+                                        <button
+                                            class="btn-speak"
+                                            onclick="speakPopup(this)"
+                                        >
+                                            <i
+                                                class="fa-solid fa-volume-low"
+                                            ></i>
+                                        </button>
+                                        <span>CÔ ấy béo </span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Item  -->
-                    <div class="item">
-                        <img
-                            src="./assets/img/tall.png"
-                            alt=""
-                            class="thumb"
-                        />
-                        <div class="body">
-                            <h3 class="title line-clamp" id="vocab">tall</h3>
-                            <p class="desc">cao, cao lớn</p>
-                            <p class="IPA">/tɑːl/</p>
-                            <p>
-                                <button
-                                    class="button"
-                                    onclick="speakWord(this)"
-                                >
-                                    <i class="fa-solid fa-volume-low"></i> Phát
-                                    Âm
-                                </button>
-                            </p>
-                        </div>
-                    </div>
+
+                   
                 </div>
             </div>
         </div>
 
         <script src="./assets/js/app.js"></script>
+        <script src="./assets/js/popup.js"></script>
     </body>
 </html>

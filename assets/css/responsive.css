@@ -3,5 +3,17 @@
 }
 
 @media (max-width: 768px) {
-    
+    .content{
+        width: 100%;
+        max-width: calc(100% - 20px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item{
+        width: calc(100% / 2 - 15px);
+    }
+    .popup-content{
+        min-width: 90%;
+        max-width: 90%;
+    }
 }
