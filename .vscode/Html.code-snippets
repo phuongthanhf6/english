@@ -1,0 +1,43 @@
+{
+    // Place your speak english workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+
+    "Item English": {
+        "prefix": "item",
+        "body": [
+            "  <!-- Item  -->",
+            "                    <div class=\"item\">",
+            "                        <img src=\"./assets/img$4\" alt=\"\" class=\"thumb\" />",
+            "                        <div class=\"body\">",
+            "                            <h3 class=\"title line-clamp\" id=\"vocab\">$1</h3>",
+            "                            <p class=\"desc\">$2</p>",
+            "                            <p class=\"IPA\">$3</p>",
+            "                            <p>",
+            "                                <button",
+            "                                    class=\"button\"",
+            "                                    onclick=\"speakWord(this)\"",
+            "                                >",
+            "                                    <i class=\"fa-solid fa-volume-low\"></i> Phát",
+            "                                    Âm",
+            "                                </button>",
+            "                            </p>",
+            "                        </div>",
+            "                    </div>"
+        ],
+        "description": "Item English"
+    }
+}
